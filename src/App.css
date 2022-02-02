@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image:;
+  color: white;
+}
+
+.jumbotron h2 {
+  color: #0d2b18;
+}
