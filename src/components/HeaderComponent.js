@@ -9,11 +9,9 @@ class Header extends Component {
                 <Jumbotron fluid>
                     <div className="container">
                         <div className="row">
-                            <div className="col">
+                            <div className="col-sm-3 text-left">
                                 <h1>Planty</h1>
-                                <h2>In Plants We Trust</h2>
-                            </div>
-                            <div class="col-md-4 col-xl-2 mt-4">
+                                <h3>In Plants We Trust</h3>
                             </div>
                         </div>
                     </div>
