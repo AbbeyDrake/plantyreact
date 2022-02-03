@@ -38,12 +38,32 @@
 }
 
 .jumbotron {
+  background-image: url("./images/monstera.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
   margin: 0;
   padding: 30px;
-  background-image:;
-  color: white;
+  color: rgb(247, 247, 247);
 }
 
 .jumbotron h2 {
   color: #0d2b18;
+}
+
+h1 {
+  font-family: 'Abril Fatface';
+}
+
+p {text-align: center;}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+footer {
+  background-color: rgba(51, 85, 66, 0.5);
+  height: 100px;
 }
