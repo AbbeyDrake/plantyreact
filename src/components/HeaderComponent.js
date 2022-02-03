@@ -13,6 +13,8 @@ class Header extends Component {
                                 <h1>Planty</h1>
                                 <h2>In Plants We Trust</h2>
                             </div>
+                            <div class="col-md-4 col-xl-2 mt-4">
+                            </div>
                         </div>
                     </div>
                 </Jumbotron>
