@@ -1,7 +1,7 @@
 import React from 'react';
 
 function PlantCareComponent() {
-  return <div></div>;
+  return <div>Content Here</div>;
 }
 
 export default PlantCareComponent;

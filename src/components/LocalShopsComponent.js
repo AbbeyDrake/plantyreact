@@ -39,7 +39,6 @@ function LocalShopsComponent(props) {
                 </div>
             </div>
         </div>
-        <NewsletterComponent/>
     </div>
   );
 }
