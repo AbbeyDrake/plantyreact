@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
 import Footer from './components/FooterComponent';
 import Header from './components/HeaderComponent';
+import LocalShopsComponent from './components/LocalShopsComponent';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Header/>
           <Switch>
-              
+            <Route path='/localshops' component={LocalShopsComponent}/>
           </Switch>
                   
         <Footer/>
