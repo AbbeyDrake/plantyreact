@@ -65,5 +65,8 @@ h3 {
 
 footer {
   background-color: rgba(51, 85, 66, 0.5);
-  height: 100px;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem;
 }
