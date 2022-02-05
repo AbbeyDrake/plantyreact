@@ -1,41 +1,58 @@
-import React from 'react';
-import { Card, CardBody, CardHeader, Row } from 'reactstrap';
-
+import React from "react";
+import { Card, CardBody, CardHeader, Row } from "reactstrap";
+import PlantCategories from "./PlantCategories";
 
 function PlantCareComponent(props) {
   return (
     <div>
-        <div className="container m-3">
-            <h1>Plant Care</h1>
-            <div className="row">
-                <div className="col-sm-6 mt-3">
-                    <h3></h3>
-                    <p>Interested in caring for a plant but don’t know which would be the best fit for you? Different plants require different environments and varying levels of care. Our Plant Care Guide helps take the guesswork out of your plant maintenance and helps keep your growing collection happy and healthy.</p>
-                </div>
-                <div className="col-sm-6 mb-4">
-
-      
-                    <Card>
-                        <CardHeader fluid>
-                            <h5 className="mb-0">Care at a Glance</h5>
-                        </CardHeader>
-                        <CardBody className="card-body text-center">
-                        <Row>
-                        <i class="fa fa-solid fa-sun fa-4x" />
-                        <p>Some plants prefer lots of light, and some do best in the shade.</p>
-                        </Row>
-                        <Row>
-                        <i class="fa fa-solid fa-sun fa-4x" />
-                        <p>There are plants that drink a lot of water, and others that prefer less.</p>
-                        </Row>
-                        </CardBody>
-                    </Card>
-                </div>
-            </div>
+      <div className='container my-5'>
+        <h1>Plant Care</h1>
+        <div className='row'>
+          <div className='col-lg-5 my-3'>
+            <p>
+              Interested in caring for a plant but don’t know which would be the
+              best fit for you? Different plants require different environments
+              and varying levels of care. Our Plant Care Guide helps take the
+              guesswork out of your plant maintenance and helps keep your
+              growing collection healthy.
+            </p>
+          </div>
+          <div className='col my-3'>
+            <img src='./assets/images/watering-houseplant.jpg' height='350' alt='watering houseplants'/>
+          </div>
         </div>
+      </div>
+
+      <div className='container'>
+        <div className='row-sm-6 my-3'>
+          <Card>
+            <CardHeader>
+              <h3>Care at a Glance</h3>
+            </CardHeader>
+            <CardBody className='align-content-center'>
+              <Row>
+                <i class='fa fa-solid fa-sun fa-4x' />
+                <p>
+                  Some plants prefer lots of light, and some do best in the
+                  shade.
+                </p>
+              </Row>
+              <Row>
+                <i class='fa fa-solid fa-water fa-4x' />
+                <p>
+                  There are plants that drink a lot of water, and others that
+                  prefer less.
+                </p>
+              </Row>
+            </CardBody>
+          </Card>
+        </div>
+        <Row>
+         {/* <!--  <PlantCategories /> --> */}
+        </Row>
+      </div>
     </div>
   );
 }
-
 
 export default PlantCareComponent;
