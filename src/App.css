@@ -54,6 +54,10 @@
   color: rgb(247, 247, 247);
 }
 
+.navbar {
+  background-color:rgba(51, 85, 66, 0.5);
+}
+
 h1 {
   font-family: 'Abril Fatface';
 }
