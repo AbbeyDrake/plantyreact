@@ -4,7 +4,7 @@ class PlantCategories extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            campsites: [
+            categories: [
                 {
                     id: 0,
                     name: 'Trailing Plants',
@@ -35,12 +35,12 @@ class PlantCategories extends Component {
 
     render() {
         {
-            const category = this.state.campsites.map(campsite => {
+            const category = this.state.categories.map(category => {
                 return (
                     <div className="row">
-                        <img src={campsite.image} alt={campsite.name} />
-                        <h2>{campsite.name}</h2>
-                        <p>{campsite.description}</p>
+                        <img src={category.image} alt={category.name} />
+                        <h2>{category.name}</h2>
+                        <p>{category.description}</p>
                     </div>
                 );
             });

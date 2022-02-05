@@ -17,8 +17,8 @@ function PlantCareComponent(props) {
               growing collection healthy.
             </p>
           </div>
-          <div className='col my-3'>
-            <img src='./assets/images/watering-houseplant.jpg' height='350' alt='watering houseplants'/>
+          <div className='media-body align-self-center col my-3'>
+            <img src='./assets/images/watering-houseplant.jpg' height='350' alt='watering houseplants' className='mw-100'/>
           </div>
         </div>
       </div>
