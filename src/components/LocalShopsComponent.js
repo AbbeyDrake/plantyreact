@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardHeader} from 'reactstrap';
+import NewsletterComponent from './NewsletterComponent';
 
 function LocalShopsComponent(props) {
   return (
@@ -39,6 +40,8 @@ function LocalShopsComponent(props) {
                 </div>
             </div>
         </div>
+        <hr></hr>
+        <NewsletterComponent></NewsletterComponent>
     </div>
   );
 }
