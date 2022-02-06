@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardBody, CardHeader, Row } from "reactstrap";
 import PlantCategories from "./PlantCategories";
+import NewsletterComponent from './NewsletterComponent';
 
 function PlantCareComponent(props) {
   return (
@@ -51,6 +52,7 @@ function PlantCareComponent(props) {
          {/* <!--  <PlantCategories /> --> */}
         </Row>
       </div>
+      <NewsletterComponent></NewsletterComponent>
     </div>
   );
 }
