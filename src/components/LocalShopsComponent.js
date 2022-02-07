@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardHeader} from 'reactstrap';
+import { Card, CardBody, CardHeader, Media} from 'reactstrap';
 import NewsletterComponent from './NewsletterComponent';
 
 function LocalShopsComponent(props) {
@@ -11,7 +11,7 @@ function LocalShopsComponent(props) {
                 <div className="col-sm-6 mt-3">
                     <h3>Find Your Local Green Spots!</h3>
                     <h5>Denver, Colorado</h5>
-                    <p>Looking for unique, local plant shops and nurseries to grow your plant family? Denver is home to many plant havens where you can browse extensive collections, take classNamees and learn more about plant care, and connect with the community through events. </p>
+                    <p>Looking for unique, local plant shops and nurseries to grow your plant family? Denver is home to many plant havens where you can browse extensive collections, take classes and learn more about plant care, and connect with the community through events. </p>
                     <div  className="form-row justify-content-center">
                         <a type="button" href="#localCarousel" className="btn btn-sm btn-dark mt-2 mb-3">See More</a>
                     </div>
@@ -31,8 +31,8 @@ function LocalShopsComponent(props) {
                         <CardBody className="card-body-cascade text-center">
                             {/* <!--Google map--> */}
                                 <div id="map-container-google-9" className="z-depth-1-half map-container-5" style={{height: 300 + 'px'}}>
-                                    {/* <iframe src="https://www.google.com/maps/d/embed?mid=1NJZfwC2LP7KC90dWXwhYxGynWB9-ZuFS&ehbc=2E312F" width="640" height="480"frameBorder="0"
-                                    style="border:0" allowFullScreen></iframe> */}
+                                    <Media src="https://www.google.com/maps/d/embed?mid=1NJZfwC2LP7KC90dWXwhYxGynWB9-ZuFS&ehbc=2E312F" style ={{width:640 + "px" }}height="480"frameBorder="0"
+                                    style="border:0" allowFullScreen></Media>
                                 
                                 </div>
                         </CardBody>

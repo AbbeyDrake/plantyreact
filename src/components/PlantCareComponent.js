@@ -39,7 +39,7 @@ function PlantCareComponent(props) {
                 </p>
               </Row>
               <Row>
-                <i class='fa fa-solid fa-water fa-4x' />
+                <i className='fa fa-solid fa-water fa-4x' />
                 <p>
                   There are plants that drink a lot of water, and others that
                   prefer less.
