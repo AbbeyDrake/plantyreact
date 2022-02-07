@@ -45,7 +45,7 @@ class Header extends Component {
         <Navbar sticky='top' expand='md'>
           <div className='container'>
             <NavbarBrand className='mr-auto' href='/'>
-              <img src='' height='30' width='30' alt='Planty Logo' />
+              <img src="../public/assets/images/noun-plant-1009164.svg" height='30' width='30' alt='Planty Logo' />
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
