@@ -1,11 +1,12 @@
 import React from 'react';
 import { Card, CardBody, CardHeader, Media} from 'reactstrap';
 import NewsletterComponent from './NewsletterComponent';
+import Iframe from 'react-iframe';
 
 function LocalShopsComponent(props) {
   return (
     <div>
-        <div className="container m-3">
+        <div className="container m-3 my-5">
             <h1>Local Shops</h1>
             <div className="row">
                 <div className="col-sm-6 mt-3">
@@ -16,23 +17,22 @@ function LocalShopsComponent(props) {
                         <a type="button" href="#localCarousel" className="btn btn-sm btn-dark mt-2 mb-3">See More</a>
                     </div>
                 </div>
-                <div className="col-sm-6 mb-4">
+                <div className="col mb-4">
 
-                    {/* <!--Card--> */}
-                    <Card className="card-cascade narrower">
-                
-                        {/* <!--Card image--> */}
+                    <Card className="card-cascade-narrower">
                         <CardHeader className="align-self-center mt-2">
                             <h5 className="mb-0">Map of Local Shops</h5>
                         </CardHeader>
-                        {/* <!--/Card image-->
-                
-                    <!--Card content--> */}
+
                         <CardBody className="card-body-cascade text-center">
-                            {/* <!--Google map--> */}
-                                <div id="map-container-google-9" className="z-depth-1-half map-container-5" style={{height: 300 + 'px'}}>
-                                    <Media src="https://www.google.com/maps/d/embed?mid=1NJZfwC2LP7KC90dWXwhYxGynWB9-ZuFS&ehbc=2E312F" style ={{width:640 + "px" }}height="480"frameBorder="0"
-                                    style="border:0" allowFullScreen></Media>
+                           
+                                <div id="map-container-google-9" className="z-depth-1-half map-container-5" style={{height: 20 + "rem"}}>
+                                    <Iframe 
+                                        url ="https://www.google.com/maps/d/embed?mid=1NJZfwC2LP7KC90dWXwhYxGynWB9-ZuFS&ehbc=2E312F"
+                                        border= "none"
+                                        width= "450px"
+                                        height= "300px"
+                                        allowFullScreen />
                                 
                                 </div>
                         </CardBody>
