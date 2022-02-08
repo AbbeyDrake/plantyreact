@@ -1,15 +1,36 @@
 import React from 'react';
-import { Card, CardBody, CardHeader, Row, Col} from 'reactstrap';
+import { Card, CardBody, CardTitle, CardImg, CardImgOverlay, CardHeader, Row, Col} from 'reactstrap';
+import { Link } from 'react-router-dom';
 import NewsletterComponent from './NewsletterComponent';
 import Iframe from 'react-iframe';
-import LocalShops from './LocalShopsDisplayComponent';
 
-// make function RenderLocalShopItem HERE (similar to Directory). The Link will change the url path and display the localshopinfo for one shop
 
+// make function RenderLocalShop HERE (similar to Directory). The Link will change the url path and display the localshopinfo for one shop
+
+
+function RenderLocalShop({localshop}){
+    return(
+        <Card>
+            <Link to={`/localshops/${localshop.id}`}>
+                <CardImg width = "100%" src = {localshop.image} alt = {localshop.name}/>
+                    <CardImgOverlay>
+                        <CardTitle>{localshop.name}</CardTitle>
+                    </CardImgOverlay>
+            </Link>
+        </Card>
+    );
+}
 
 function LocalShopsComponent(props) {
 
-    // COPY CONST DIRECTORY = props.localshops.map from directory component HERE
+    const directory = props.localshops.map(localshop => {
+        return (
+            <div key = {localshop.id} className = "col-md-5 m-1">
+               <RenderLocalShop localshop = {localshop}/>
+            </div>
+        );
+
+    });
   
     return (
     <div>
@@ -47,9 +68,10 @@ function LocalShopsComponent(props) {
                     </Card>
                 </Col>
             </Row>
+            <Row>
+                {directory}
+            </Row>
         </div>
-        <hr></hr>
-        {/* <LocalShops></LocalShops> */}
         <hr></hr>
         <NewsletterComponent></NewsletterComponent>
     </div>
