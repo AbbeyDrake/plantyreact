@@ -5,6 +5,7 @@ import Footer from "./FooterComponent";
 import HomeComponent from "./HomeComponent";
 import LocalShopsComponent from "./LocalShopsComponent";
 import PlantCareComponent from "./PlantCareComponent";
+import LocalShopInfo from "./LocalShopInfo";
 
 class Main extends Component {
   render() {
@@ -13,7 +14,8 @@ class Main extends Component {
         <Header />
         <Switch>
           <Route path='/home' component={HomeComponent} />
-          <Route path='/localshops' component={LocalShopsComponent} />
+          <Route exact path='/localshops' component={LocalShopsComponent} />
+          <Route path='/localshops/:localshopid' component={LocalShopInfo}/>
           <Route path='/plantcare' component={PlantCareComponent} />
           <Redirect to='/home' />
         </Switch>

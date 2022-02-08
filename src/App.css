@@ -64,12 +64,12 @@ h1 {
 
 p {text-align: center;}
 
-h3, .CardHeader {
+h3, .card-header {
     font-family: 'Courier Prime', Courier, monospace;
 
 }
 
-.NavLink {
+.nav-link {
   color: white;
 }
 

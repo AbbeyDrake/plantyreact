@@ -31,8 +31,8 @@ function LocalShopsComponent(props) {
                                     <Iframe 
                                         url ="https://www.google.com/maps/d/embed?mid=1NJZfwC2LP7KC90dWXwhYxGynWB9-ZuFS&ehbc=2E312F"
                                         border= "none"
-                                        width= "450px"
-                                        height= "300px"
+                                        width= "100%"
+                                        height= "100%"
                                         allowFullScreen 
                                     />
                                 
