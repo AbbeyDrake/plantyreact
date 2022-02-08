@@ -64,9 +64,13 @@ h1 {
 
 p {text-align: center;}
 
-h3 {
+h3, .CardHeader {
     font-family: 'Courier Prime', Courier, monospace;
 
+}
+
+.NavLink {
+  color: white;
 }
 
 footer {

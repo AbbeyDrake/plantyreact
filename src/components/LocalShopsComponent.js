@@ -9,7 +9,7 @@ function LocalShopsComponent(props) {
     <div>
         <div className="container m-3 my-5">
             <h1>Local Shops</h1>
-            <Row className="row">
+            <Row>
                 <Col className="col-sm-6 mt-3">
                     <h3>Find Your Local Green Spots!</h3>
                     <h5>Denver, Colorado</h5>
@@ -33,7 +33,8 @@ function LocalShopsComponent(props) {
                                         border= "none"
                                         width= "450px"
                                         height= "300px"
-                                        allowFullScreen />
+                                        allowFullScreen 
+                                    />
                                 
                                 </div>
                         </CardBody>
@@ -43,6 +44,7 @@ function LocalShopsComponent(props) {
         </div>
         <hr></hr>
         <LocalShops></LocalShops>
+        <hr></hr>
         <NewsletterComponent></NewsletterComponent>
     </div>
   );
