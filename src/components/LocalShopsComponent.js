@@ -4,8 +4,14 @@ import NewsletterComponent from './NewsletterComponent';
 import Iframe from 'react-iframe';
 import LocalShops from './LocalShopsDisplayComponent';
 
+// make function RenderLocalShopItem HERE (similar to Directory). The Link will change the url path and display the localshopinfo for one shop
+
+
 function LocalShopsComponent(props) {
-  return (
+
+    // COPY CONST DIRECTORY = props.localshops.map from directory component HERE
+  
+    return (
     <div>
         <div className="container m-3 my-5">
             <h1>Local Shops</h1>
@@ -43,7 +49,7 @@ function LocalShopsComponent(props) {
             </Row>
         </div>
         <hr></hr>
-        <LocalShops></LocalShops>
+        {/* <LocalShops></LocalShops> */}
         <hr></hr>
         <NewsletterComponent></NewsletterComponent>
     </div>
