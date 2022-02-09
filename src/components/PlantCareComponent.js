@@ -1,7 +1,15 @@
-import React from "react";
-import { Card, CardBody, CardHeader, Row } from "reactstrap";
+import React, { Component } from "react";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardHeader,
+  Container,
+  Row,
+} from "reactstrap";
 import PlantCategories from "./PlantCategories";
-import NewsletterComponent from './NewsletterComponent';
+import NewsletterComponent from "./NewsletterComponent";
 
 function PlantCareComponent(props) {
   return (
@@ -19,20 +27,25 @@ function PlantCareComponent(props) {
             </p>
           </div>
           <div className='media-body align-self-center col my-3'>
-            <img src='./assets/images/watering-houseplant.jpg' height='350' alt='watering houseplants' className='mw-100'/>
+            <img
+              src='./assets/images/watering-houseplant.jpg'
+              height='350'
+              alt='watering houseplants'
+              className='mw-100'
+            />
           </div>
         </div>
       </div>
 
       <div className='container'>
         <div className='row-sm-6 my-3'>
-          <Card>
+          <Card className="align-self-center">
             <CardHeader>
               <h3>Care at a Glance</h3>
             </CardHeader>
-            <CardBody className='align-content-center'>
+            <CardBody className='align--center'>
               <Row>
-                <i class='fa fa-solid fa-sun fa-4x' />
+                <i class='fa-solid fa-sun fa-4x' />
                 <p>
                   Some plants prefer lots of light, and some do best in the
                   shade.
@@ -48,12 +61,29 @@ function PlantCareComponent(props) {
             </CardBody>
           </Card>
         </div>
-        <Row>
-         {/* <!--  <PlantCategories /> --> */}
-        </Row>
       </div>
-      <NewsletterComponent></NewsletterComponent>
+
+    <div>
+     <Row className="row align-self-center">
+          <Container className="col">
+            <PlantCategories />
+          </Container>
+      </Row>
     </div>
+ 
+
+
+    <Row>
+      <Container>
+      <div><NewsletterComponent /></div>
+      </Container>
+    </Row>
+
+
+
+    </div>
+  
+
   );
 }
 

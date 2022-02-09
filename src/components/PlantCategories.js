@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+import {
+    Card,
+    CardImg,
+    CardText,
+    CardBody,
+    CardHeader,
+    Container,
+    Row,
+  } from "reactstrap";
 
 class PlantCategories extends Component {
     constructor(props) {
@@ -34,29 +43,28 @@ class PlantCategories extends Component {
     }
 
     render() {
-        {
+        
             const category = this.state.categories.map(category => {
                 return (
-                    <div className="row">
-                        <img src={category.image} alt={category.name} />
-                        <h2>{category.name}</h2>
-                        <p>{category.description}</p>
-                    </div>
+                
+                    <Card className="category">
+                        <CardHeader>{category.name}</CardHeader>
+                        <CardImg src={category.image} alt={category.name} height={category.height}/>
+                        <CardText>{category.description}</CardText>
+                    </Card>
+        
                 );
             });
     
             return (
                 <div className="container">
-                    <div className="row">
+                    <div className="row my-3">
                         {category}
                     </div>
                 </div>
             );
         }
-        return (
-            <div />
-        );
     }
-}
+
 
 export default PlantCategories;

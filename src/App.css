@@ -80,3 +80,8 @@ footer {
   align-items: center;
   padding: 2rem;
 }
+
+.category {
+  width: 15rem ;
+  height: 15rem;
+}
