@@ -23,14 +23,14 @@ function RenderLocalShop({localshop}){
 
 function LocalShopsComponent(props) {
 
-    const directory = props.localshops.map(localshop => {
-        return (
-            <div key = {localshop.id} className = "col-md-5 m-1">
-               <RenderLocalShop localshop = {localshop}/>
-            </div>
-        );
+    // const directory = props.localshops.map(localshop => {
+    //     return (
+    //         <div key = {localshop.id} className = "col-md-5 m-1">
+    //            <RenderLocalShop localshop = {localshop}/>
+    //         </div>
+    //     );
 
-    });
+    // });
   
     return (
     <div>
@@ -68,9 +68,9 @@ function LocalShopsComponent(props) {
                     </Card>
                 </Col>
             </Row>
-            <Row>
+            {/* <Row>
                 {directory}
-            </Row>
+            </Row> */}
         </div>
         <hr></hr>
         <NewsletterComponent></NewsletterComponent>

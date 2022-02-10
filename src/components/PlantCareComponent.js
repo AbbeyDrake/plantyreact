@@ -45,7 +45,7 @@ function PlantCareComponent(props) {
             </CardHeader>
             <CardBody className='align--center'>
               <Row>
-                <i class='fa-solid fa-sun fa-4x' />
+                <i className='fa fa-solid fa-sun fa-4x' />
                 <p>
                   Some plants prefer lots of light, and some do best in the
                   shade.
@@ -64,20 +64,19 @@ function PlantCareComponent(props) {
       </div>
 
     <div>
-     <Row className="row align-self-center">
-          <Container className="col">
-            <PlantCategories />
-          </Container>
-      </Row>
+  
+        <Row className="row align-self-center">
+              <Container className="col">
+                <PlantCategories />
+              </Container>
+          </Row>
     </div>
  
-
-
-    <Row>
-      <Container>
-      <div><NewsletterComponent /></div>
-      </Container>
-    </Row>
+        <Row>
+          <Container>
+          <div><NewsletterComponent /></div>
+          </Container>
+        </Row>
 
 
 

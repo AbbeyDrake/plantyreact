@@ -70,7 +70,7 @@ h3, .card-header {
 }
 
 .nav-link {
-  color: white;
+  color: black;
 }
 
 footer {
@@ -83,5 +83,4 @@ footer {
 
 .category {
   width: 15rem ;
-  height: 15rem;
 }
