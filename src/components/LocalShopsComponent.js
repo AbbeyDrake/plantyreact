@@ -3,6 +3,7 @@ import { Card, CardBody, CardTitle, CardImg, CardImgOverlay, CardHeader, Row, Co
 import { Link } from 'react-router-dom';
 import NewsletterComponent from './NewsletterComponent';
 import Iframe from 'react-iframe';
+import LocalShopsCarousel from './LocalShopsCarousel';
 
 
 // make function RenderLocalShop HERE (similar to Directory). The Link will change the url path and display the localshopinfo for one shop
@@ -68,6 +69,9 @@ function LocalShopsComponent(props) {
                     </Card>
                 </Col>
             </Row>
+            
+            <LocalShopsCarousel></LocalShopsCarousel>
+            
             {/* <Row>
                 {directory}
             </Row> */}
