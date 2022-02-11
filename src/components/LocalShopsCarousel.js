@@ -6,11 +6,10 @@ import { Carousel } from 'react-responsive-carousel';
 
 class LocalShopsCarousel extends Component {
     render() {
-        return (
-            <Carousel>
+        return( <Carousel> 
                 <div>
                     <img src="./images/birdsall" />
-                    <p>"Birdsall is a locally-owned family business run by women with two locations in Denver. They are known best for their massive selection of outdoor containers and have an ever-rotating selection of houseplants."/p>
+                    <p>"Birdsall is a locally-owned family business run by women with two locations in Denver. They are known best for their massive selection of outdoor containers and have an ever-rotating selection of houseplants."</p>
                 </div>
                 <div>
                     <img src="./images/bronzepetal" />
@@ -19,6 +18,6 @@ class LocalShopsCarousel extends Component {
             </Carousel>
         );
     }
-});
+};
 
 export default LocalShopsCarousel
