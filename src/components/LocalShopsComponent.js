@@ -26,7 +26,7 @@ function LocalShopsComponent(props) {
     const directory = LOCALSHOPS.map(localshop => {
         console.log(localshop)
         return (
-            <div key = {localshop.id} className = "col-md-5 m-1">
+            <div key = {localshop.id} className = "col-md-4 m-1">
                <RenderLocalShop localshop = {localshop}/>
             </div>
         );
@@ -73,7 +73,7 @@ function LocalShopsComponent(props) {
             
             <LocalShopsCarousel></LocalShopsCarousel>
            <hr></hr>
-            <Row>
+            <Row id = "directory">
                 {directory}
             </Row>
         </div>
