@@ -7,9 +7,13 @@ import {
   CardHeader,
   Container,
   Row,
+  Media
 } from "reactstrap";
 import PlantCategories from "./PlantCategories";
 import NewsletterComponent from "./NewsletterComponent";
+
+
+
 
 function PlantCareComponent(props) {
   return (
@@ -72,6 +76,13 @@ function PlantCareComponent(props) {
           </Row>
     </div>
  
+    <Row className="row align-self-center">
+        <Container className="col">
+          {/* <RenderPlantList /> */}
+        </Container>
+    </Row>
+
+
         <Row>
           <Container>
           <div><NewsletterComponent /></div>
