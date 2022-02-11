@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { LOCALSHOPS } from './LocalShopsList';
 
 
 class LocalShopsCarousel extends Component {
+    constructor(props){
+        super(props)
+    }
+
     render() {
         return( <Carousel> 
                 <div>
-                    <img src="./images/birdsall" />
+                    <img src={this.props.image}/>
                     <p>"Birdsall is a locally-owned family business run by women with two locations in Denver. They are known best for their massive selection of outdoor containers and have an ever-rotating selection of houseplants."</p>
                 </div>
                 <div>

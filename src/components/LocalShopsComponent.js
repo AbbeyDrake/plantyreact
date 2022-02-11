@@ -71,7 +71,7 @@ function LocalShopsComponent(props) {
                 </Col>
             </Row>
             
-            {/* <LocalShopsCarousel></LocalShopsCarousel> */}
+            <LocalShopsCarousel></LocalShopsCarousel>
            <hr></hr>
             <Row>
                 {directory}
