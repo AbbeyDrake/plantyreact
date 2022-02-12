@@ -82,7 +82,11 @@ footer {
 }
 
 .category {
-  width: 15rem ;
+  width: 17rem;
+  align-items: center;
+  margin: 1rem;
+  background-color:rgba(156, 182, 167, 0.5)
+  
 }
 
 

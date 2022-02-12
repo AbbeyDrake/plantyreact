@@ -47,16 +47,16 @@ function PlantCareComponent(props) {
             <CardHeader>
               <h3>Care at a Glance</h3>
             </CardHeader>
-            <CardBody className='align--center'>
+            <CardBody className='align-self-center'>
               <Row>
-                <i className='fa fa-solid fa-sun fa-4x' />
+              <img src="./assets/images/sun.svg" height='40' width='40' alt='Sun Icon' />
                 <p>
                   Some plants prefer lots of light, and some do best in the
                   shade.
                 </p>
               </Row>
               <Row>
-                <i className='fa fa-solid fa-water fa-4x' />
+              <img src="./assets/images/water.svg" height='40' width='40' alt='Water icon' />
                 <p>
                   There are plants that drink a lot of water, and others that
                   prefer less.
@@ -69,7 +69,7 @@ function PlantCareComponent(props) {
 
     <div>
   
-        <Row className="row align-self-center">
+        <Row>
               <Container className="col">
                 <PlantCategories />
               </Container>

@@ -1,69 +1,51 @@
 import React, { Component } from "react";
 import {
-  Card,
   CardImg,
   CardText,
   CardBody,
   CardHeader,
   Container,
+  CardGroup,
+  Card,
   Row,
   Media,
+  CardFooter,
 } from "reactstrap";
-// import { PlantLists } from "PlantLists";
-// import { render } from "@testing-library/react";
+import { CATEGORIES } from "./PlantTypes";
+
 
 
 class PlantCategories extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      categories: [
-        {
-          id: 0,
-          name: "Trailing Plants",
-          image: "assets/images/trailing-plant.jpg",
-          description:
-            "Trailing plants grow vines of leaves. Plant them in hanging baskets for a dramatic effect.",
-        },
-        {
-          id: 1,
-          name: "Large Plants",
-          image: "assets/images/large-plants.jpg",
-          description:
-            "Larger plants are a perfect addition to fill up an empty space in a room.",
-        },
-        {
-          id: 2,
-          name: "Flowering Plants",
-          image: "assets/images/flowering-plants.jpg",
-          description:
-            "Flowering plants will add a welcome pop of color to your collection.",
-        },
-        {
-          id: 3,
-          name: "Succulent Plants",
-          image: "assets/images/succulent-plants.jpg",
-          description:
-            "Succulents are characterized by their ability to hold water in their leaves and stems.",
-        },
-      ],
+      categories: CATEGORIES,
     };
   }
 
   render() {
     const category = this.state.categories.map((category) => {
       return (
-        <div>
-          <Card className='category'>
+        
+          <CardGroup className="row">
+          <Card className="category col center">
             <CardHeader>{category.name}</CardHeader>
+            <CardBody>
             <CardImg
               src={category.image}
               alt={category.name}
-              height={category.height}
             />
             <CardText>{category.description}</CardText>
+            </CardBody>
+            
+              <button fluid className=" btn btn-secondary btn-fluid" onClick={this.state}>Learn More</button>
+          
           </Card>
-        </div>
+          </CardGroup>
+        
+        
+        
+      
       );
     });
 
