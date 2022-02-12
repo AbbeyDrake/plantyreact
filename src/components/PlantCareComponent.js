@@ -69,7 +69,7 @@ function PlantCareComponent(props) {
 
     <div>
   
-        <Row>
+        <Row className="row">
               <Container className="col">
                 <PlantCategories />
               </Container>

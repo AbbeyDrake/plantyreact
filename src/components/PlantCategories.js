@@ -31,7 +31,7 @@ class PlantCategories extends Component {
               <CardHeader>{category.name}</CardHeader>
               <CardTitle>{category.aka}</CardTitle>
               <CardBody>
-                <CardImg src={category.image} alt={category.name} />
+                <CardImg src={category.image} width="20" alt={category.name} />
                 <CardText>{category.description}</CardText>
               </CardBody>
             </Card>

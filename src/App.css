@@ -82,7 +82,7 @@ footer {
 }
 
 .category {
-  height: 20rem;
+  width: 20rem;
   margin: 1rem;
   justify-content: center;
   background-color:rgba(156, 182, 167, 0.5)
