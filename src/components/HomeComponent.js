@@ -7,9 +7,9 @@ import { HOMEIMAGESLIST } from './HomeImagesList';
 function HomeComponent() {
   return (
   <div>
-     <div className="container mt-3">
+     <div className="container">
         <div className="row">
-            <div className="col-sm-8 offset-2">
+            <div className="col-sm-10 offset-1">
                 <h1>Plant of the Day</h1>
                 <p>Planty, invites Plant Lovers around the world to experience the ultimate Planty experience. Join us
                     as we share our love for all things house plants and sustainability! The Plant of the Day, is a
