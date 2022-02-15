@@ -6,25 +6,25 @@ import { HOMEIMAGESLIST } from './HomeImagesList';
 import { HOMECARDSLIST } from './HomeCardsList';
 
 function RenderCard(){
-    return(
-      <div>
-        {HOMECARDSLIST.map(homeCard => {
-          return(
-                  
-                  <Card>
-                      <h2>{homeCard.title}</h2>
-                      <CardImg src={homeCard.image} alt = {homeCard.name}/>
-                      <CardBody>
-                        {homeCard.description}
-                      </CardBody>
-                  </Card>
-                 
-          );
-      })}
+
+      const homeCard = HOMECARDSLIST.map(homeCard => {
+        return(
+                <Card>
+                    <h2>{homeCard.title}</h2>
+                    <CardImg src={homeCard.image} alt = {homeCard.name}/>
+                    <CardBody>
+                      {homeCard.description}
+                    </CardBody>
+                </Card>  
+        );  
+      })
+      
+  return(
+      <div className="col-sm-5 m-2 p-3">
+        {homeCard}
        </div>
     );
 } 
-
 
 function HomeComponent() {
   return (
@@ -62,9 +62,7 @@ function HomeComponent() {
       </div>
       <div className="container">
         <div className="row">
-          <div className='col-sm-6 m-3 p-3'>
             <RenderCard></RenderCard>
-          </div>
         </div>
       </div>
   </div>
