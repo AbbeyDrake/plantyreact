@@ -8,18 +8,18 @@ import { Link } from 'react-router-dom';
 
 function LocalShopsCarousel() {
     
-        return( 
-        <Carousel autoPlay showArrows infiniteLoop> 
-            {LOCALSHOPS.map((localshop)=>{
-                return(
-                    <Link key = {localshop.id} to = {`/localshops/${localshop.id}`}>
-                        <div >
-                            <img className = "carousel-image" src={localshop.image}/>
-                        </div>
-                    </Link>
-                )
-            })}   
-         </Carousel>
+        return(
+            <Carousel autoPlay showArrows infiniteLoop> 
+                {LOCALSHOPS.map((localshop)=>{
+                    return(
+                        <Link key = {localshop.id} to = {`/localshops/${localshop.id}`}>
+                            <div >
+                                <img className = "carousel-image" src={localshop.image}/>
+                            </div>
+                        </Link>
+                    )
+                })}   
+            </Carousel>
         );
     
 };

@@ -70,8 +70,12 @@ function LocalShopsComponent(props) {
                     </Card>
                 </Col>
             </Row>
-            
-            <LocalShopsCarousel></LocalShopsCarousel>
+            <Row>
+                <div className="col-sm-2 col-md-3"></div>
+                <div className="col-sm-8 col-md-6">
+                <LocalShopsCarousel></LocalShopsCarousel>
+                </div> 
+            </Row>
            <hr></hr>
             <Row id = "directory">
                 {directory}
