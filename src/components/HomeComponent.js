@@ -56,12 +56,13 @@ function HomeComponent() {
                     )
                 })}   
             </Carousel>
+            <hr></hr>
           </div>
         </div>
       </div>
       <div className="container">
         <div className="row">
-          <div className='col-sm-6'>
+          <div className='col-sm-6 m-3 p-3'>
             <RenderCard></RenderCard>
           </div>
         </div>

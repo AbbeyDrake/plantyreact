@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function LocalShopsCarousel() {
     
         return( 
-        <Carousel autoPlay showArrows infiniteLoop centerMode centerSlidePercentage={80}> 
+        <Carousel autoPlay showArrows infiniteLoop> 
             {LOCALSHOPS.map((localshop)=>{
                 return(
                     <Link key = {localshop.id} to = {`/localshops/${localshop.id}`}>
