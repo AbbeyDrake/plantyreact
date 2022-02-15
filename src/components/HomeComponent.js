@@ -1,7 +1,25 @@
 import React, { Component }  from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import {Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
 import { HOMEIMAGESLIST } from './HomeImagesList';
+import { HOMECARDSLIST } from './HomeCardsList';
+
+// function RenderCard(){
+//     return(
+//         HOMECARDSLIST.map((homeCard)=>{
+//           return(
+//                 <Card>
+//                     <CardImg src={homeCard.image} alt = {homeCard.name}/>
+//                     <CardBody>
+//                       <CardTitle>{homeCard.title}</CardTitle>
+//                       <CardText{homeCard.description}></CardText>
+//                     </CardBody>
+//                 </Card>
+//           );
+//       })
+//     );
+// } 
 
 
 function HomeComponent() {
@@ -27,7 +45,7 @@ function HomeComponent() {
       <div className='container'>
         <div className='row'>
           <div className='col-sm-8 offset-2'>
-            <Carousel autoPlay showArrows={true} infiniteLoop>
+              <Carousel autoPlay showArrows={true} infiniteLoop>
                 {HOMEIMAGESLIST.map((homeimage)=>{
                     return(
                             <div key = {homeimage.id}>
@@ -37,14 +55,17 @@ function HomeComponent() {
                       
                     )
                 })}   
-          </Carousel>
+            </Carousel>
           </div>
         </div>
+        <div className="row">
+          {/* <div className='col'>
+            <RenderCard></RenderCard>
+          </div> */}
+        </div>
       </div>
-    <div>
-
-    </div>
-  </div>);
+  </div>
+  );
 }
 
 
