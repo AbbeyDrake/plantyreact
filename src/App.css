@@ -81,13 +81,18 @@ footer {
   padding: 2rem;
 }
 
-.category {
-  width: 20rem;
-  margin: 1rem;
+#categorycard {
+  width: 16rem;
+  margin: auto;
+  display: flex;
   justify-content: center;
   background-color:rgba(156, 182, 167, 0.5)
-  
 }
+
+.plantList {
+  display: flex;
+}
+
 
 .carousel{
   max-width: 30rem;

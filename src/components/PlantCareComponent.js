@@ -9,7 +9,7 @@ import {
   Row,
   Media
 } from "reactstrap";
-import PlantCategories from "./PlantCategories";
+import { PlantCategories, TrailingPlants, LargePlants, FloweringPlants, SucculentPlants } from "./PlantCategories";
 import NewsletterComponent from "./NewsletterComponent";
 
 
@@ -67,24 +67,31 @@ function PlantCareComponent(props) {
         </div>
       </div>
 
-    <div>
-  
-        <Row className="row">
-              <Container className="col">
-                <PlantCategories />
-              </Container>
-          </Row>
-    </div>
+    <Container>
+        <Row className="my-5">
+            <PlantCategories />
+        </Row>
+     </Container>
+       
+
  
-    <Row className="row align-self-center">
-        <Container className="col">
-          {/* <RenderPlantList /> */}
+    <Row>
+        <Container className="my-5 list-group">
+            <h3>Trailing Plants</h3>
+               <li className="list-group-item"><TrailingPlants /></li>
+            <h3>Large Plants</h3>
+                <li className="list-group-item"><LargePlants /></li>
+            <h3>Flowering Plants</h3>
+                <li className="list-group-item"><FloweringPlants /></li>
+            <h3>Succulent Plants</h3>
+                <li className="list-group-item"><SucculentPlants /></li>
+        
         </Container>
     </Row>
 
 
         <Row>
-          <Container>
+          <Container className="my-5">
           <div><NewsletterComponent /></div>
           </Container>
         </Row>
