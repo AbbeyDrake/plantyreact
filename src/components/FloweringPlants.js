@@ -16,14 +16,14 @@ export const FLOWERINGPLANTS = [
     image: "/assets/images/african-violet.jpg",
     featured: false,
     description:
-      "Fiddle Leaf Figs are picky about their sunlight. If they find a spot in the sun where they thrive, they do not like to be moved.",
+      "African Violets bloom brilliant purple flowers several times a year if kept in the right conditions. There are hundreds of color varieties",
     link: "https://en.wikipedia.org/wiki/Streptocarpus_sect._Saintpaulia",
   },
   {
     id: 2,
     name: "Anthurium",
     aka: "Anthurium spp",
-    image: "/assets/images/areca-palm.jpg ",
+    image: "/assets/images/anthurium.jpg ",
     featured: false,
     description:
       "Known for their long lasting vibrant tropical blooms, they are affectionately known as a flamingo flower and prefer warm, humid conditions.",

@@ -26,7 +26,7 @@ function PlantCategories(){
       
       
           <a type='button' onClick={category.link}>
-            <Card id="categorycard">
+            <Card className="categoryCard">
               <CardHeader>{category.name}</CardHeader>
               <CardTitle>{category.aka}</CardTitle>
               <CardBody>
@@ -53,7 +53,7 @@ function TrailingPlants(){
 
       const trailingPlants = TRAILINGPLANTS.map(trailingPlants => {
         return(
-          <div className="row">
+          <div className="row plantList">
             <Media className="col-sm-2"
               object
               src={trailingPlants.image}
@@ -78,7 +78,7 @@ function LargePlants(){
 
   const largePlants = LARGEPLANTS.map(largePlants => {
     return(
-      <div className="row">
+      <div className="row plantList">
         <Media className="col-sm-2"
           object
           src={largePlants.image}
@@ -103,7 +103,7 @@ function FloweringPlants(){
 
   const floweringPlants = FLOWERINGPLANTS.map(floweringPlants => {
     return(
-      <div className="row">
+      <div className="row plantList">
         <Media className="col-sm-2"
           object
           src={floweringPlants.image}
@@ -128,7 +128,7 @@ function SucculentPlants(){
 
   const succulentPlants = SUCCULENTPLANTS.map(succulentPlants => {
     return(
-      <div className="row">
+      <div className="row plantList">
         <Media className="col-sm-2"
           object
           src={succulentPlants.image}

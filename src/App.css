@@ -81,16 +81,21 @@ footer {
   padding: 2rem;
 }
 
-#categorycard {
+.categoryCard {
   width: 16rem;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  display: block;
+
   background-color:rgba(156, 182, 167, 0.5)
 }
 
 .plantList {
-  display: flex;
+  display: center;
+  background-color: rgba(156, 182, 167, 0.5)
+}
+
+.plantList>src {
+
 }
 
 

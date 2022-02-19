@@ -20,8 +20,9 @@ function PlantCareComponent(props) {
     <div>
       <div className='container my-5'>
         <h1>Plant Care</h1>
-        <div className='row'>
+        <div className='row my-5'>
           <div className='col-lg-5 my-3'>
+            <h2>Caring For Your Plants</h2>
             <p>
               Interested in caring for a plant but don’t know which would be the
               best fit for you? Different plants require different environments
